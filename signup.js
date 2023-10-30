@@ -13,7 +13,7 @@ let password= document.getElementById('pass').value;
  if(mobile.length==0){
     alert('Enter Mobile Number')
  }
- else if(mobile.length!==11||mobile.length!==11){
+ else if(mobile.length!==10||mobile.length!==11){
     alert('Enter Valid Mobile Number')
  }
  else{
@@ -23,6 +23,9 @@ let password= document.getElementById('pass').value;
         mobile:mobile,
         password:password
     }
+
+
+
     // create array
 // let users=[];
 //     //push obj in array

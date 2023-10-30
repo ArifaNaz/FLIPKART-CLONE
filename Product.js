@@ -1,12 +1,20 @@
 let sample_data = [
     {
-        Brand:"Arrow",
+        Brand:"Brand:Arrow",
         img_src:"https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/i/i/s/-original-imaghgchxvgkactc.jpeg?q=70",
         names:"Men Slim Fit Self",
-        price:"758",
-        actualprice:"2,299",
-        size:'S,M,L,XL'
+        price:"Rs/-758",
+        actualprice:"Rs/-2,299",
+        size:'Available Size:S,M,L,XL'
     },
+    // {
+    //     Brand:'abc',
+    //     img_src:'',
+    //     names:'xyz',
+    //     price:'324',
+    //     actualprice:'324',
+    //     size:'S,M'
+    // },
     {
         Brand:"Arrow",
         img_src:"https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/a/p/c/40-arfkosh0024-arrow-original-imagszket7qcdbze.jpeg?q=70",
@@ -97,8 +105,8 @@ let sample_data = [
         Brand:"Puma",
         img_src:"https://rukminim2.flixcart.com/image/612/612/xif0q/track-suit/9/z/c/-original-imagg9zwzngacvry.jpeg?q=70",
         names:"Men Slim Fit Self",
-        price:"5578",
-        actualprice:"10,399",
+        price:"Rs/-5578",
+        actualprice:"Rs/-10,399",
         size:'S,M,L,XL'
     },
     
@@ -116,11 +124,10 @@ function Product(){
 
     collection.map((element)=>{
         
-        let box = document.createElement("div");
-
-        let innerbox = document.createElement("div")
+    let box = document.createElement("div");
+    let innerbox = document.createElement("div")
     let price1 = document.createElement("span");
-     price1.innerHTML = element.price
+    price1.innerHTML = element.price
     let price2 = document.createElement("span");
     price2.innerHTML = element.actualprice
 
